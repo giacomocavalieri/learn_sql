@@ -1,0 +1,145 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+footer {
+    margin-top: 5rem;
+    font-size: 80%;
+    color: grey;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+pre {
+    line-height: 1;
+}
+
+pre code {
+    font-family: monospace;
+    line-height: 1;
+}
+
+a {
+    color: #ffffff;
+}
+
+.exercises-list {
+    list-style-type: "→ ";
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.exercises-list li::marker {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.proposed-solution {
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.wait-to-advance {
+    color: #888888;
+    font-style: italic;
+}
+
+.query {
+    position: relative;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    border: 1px solid #888;
+    box-shadow: 0.5rem 0.5rem 0 0 #00000030;
+
+    transition:
+        box-shadow 0.3s ease-in-out,
+        border-color 0.3s ease-in-out;
+}
+
+.query-editor,
+.query-result {
+    width: 100%;
+    color: #ffffff;
+    padding: 1rem;
+    margin: 0;
+}
+
+.query-result {
+    overflow: scroll;
+    transition:
+        background-color 0.3s ease-in-out,
+        border-color 0.3s ease-in-out;
+}
+
+.query-editor + .query-result {
+    border-top: 1px solid #888888;
+}
+
+.query-hint {
+    padding-top: 1rem;
+    font-family: monospace;
+}
+
+.query.failure {
+    border-color: #cc4143;
+    box-shadow: 0.5rem 0.5rem 0 0 #cc414330;
+}
+
+.query.failure .query-result {
+    background-color: #cc4143;
+    border-color: #cc4143;
+}
+
+.query.success {
+    border-color: #438452;
+    box-shadow: 0.5rem 0.5rem 0 0 #43845230;
+}
+
+.query.success .query-result {
+    background-color: #438452;
+    border-color: #438452;
+}
+
+.limit-max-width-and-center {
+    padding: 2rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}

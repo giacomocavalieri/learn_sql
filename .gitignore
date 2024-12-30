@@ -1,0 +1,10 @@
+*.beam
+*.ez
+/build
+erl_crash.dump
+
+# macOS stuff
+.DS_Store
+
+# node
+/node_modules

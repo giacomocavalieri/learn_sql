@@ -1,0 +1,15 @@
+name = "learn_sql"
+version = "1.0.0"
+target = "javascript"
+
+[dependencies]
+gleam_stdlib = ">= 0.34.0 and < 2.0.0"
+lustre = ">= 4.6.3 and < 5.0.0"
+tobble = ">= 2.0.0 and < 3.0.0"
+gleam_json = ">= 2.2.0 and < 3.0.0"
+rank = ">= 1.0.0 and < 2.0.0"
+modem = ">= 2.0.1 and < 3.0.0"
+
+[dev-dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"
+lustre_dev_tools = ">= 1.6.5 and < 2.0.0"
